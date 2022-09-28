@@ -6,8 +6,7 @@ const {schemaRegister, schemaLogin} = require('../../models/users')
 const {registerUser, 
     loginUser, 
     getCurrentUser, 
-    logoutUser, 
-    updateAvatar,} = require('../../controllers/auth_controllers')
+    logoutUser, } = require('../../controllers/auth_controllers')
 
 router.post('/signup', validation(schemaRegister), registerUser)
 
