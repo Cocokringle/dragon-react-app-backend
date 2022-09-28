@@ -76,10 +76,11 @@ const logoutUser = async (req, res, next) => {
 }
 
 const getCurrentUser = async (req, res, next) =>{
-    const {email} = req.user
+    const {_id, email} = req.user
     res.status(200).json({
         user: {
             email: email,
+            id: _id,
         }
     })
 }
