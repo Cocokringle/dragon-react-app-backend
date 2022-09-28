@@ -17,10 +17,7 @@
   ],
   "servers": [
     {
-      "url": ""
-    },
-    {
-      "url": "http://localhost:3000"
+      "url": "https://serene-inlet-87913.herokuapp.com"
     }
   ],
   "tags": [
