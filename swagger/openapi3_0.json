@@ -236,7 +236,7 @@
                 "type": "string",
                 "format": "email"
               },
-              "avatarURL": {
+              "name": {
                 "type": "string"
               }
             }
@@ -275,6 +275,9 @@
               "email": {
                 "type": "string",
                 "format": "email"
+              },
+              "name": {
+                "type": "string"
               }
             }
           }
@@ -289,6 +292,9 @@
               "email": {
                 "type": "string",
                 "format": "email"
+              },
+              "name": {
+                "type": "string"
               },
               "id": {
                 "type": "string"

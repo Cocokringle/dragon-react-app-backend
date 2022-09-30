@@ -4,7 +4,6 @@ const bcrypt = require('bcryptjs');
 const jwt = require('jsonwebtoken');
 require('dotenv').config();
 const {SECRET_KEY} = process.env;
-// const fs = require('fs/promises')
 const { v4: uuidv4 } = require("uuid");
 
 const registerUser = async (req, res, next) => {
@@ -20,7 +19,8 @@ const registerUser = async (req, res, next) => {
 
         res.status(201).json({
             user: {
-            email: result.email,
+                email: result.email,
+                name: result.name,
             }
         })
 
@@ -53,7 +53,8 @@ const loginUser = async (req, res, next) => {
         res.status(200).json({
             token: token,
             user: {
-            email: user.email,
+                email: user.email,
+                name: user.name,
             }
         })
 
@@ -76,10 +77,11 @@ const logoutUser = async (req, res, next) => {
 }
 
 const getCurrentUser = async (req, res, next) =>{
-    const {_id, email} = req.user
+    const {_id, email, name} = req.user
     res.status(200).json({
         user: {
             email: email,
+            name: name,
             id: _id,
         }
     })
