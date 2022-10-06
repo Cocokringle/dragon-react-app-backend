@@ -1,5 +1,5 @@
 # dragon-react-app-backend
-## The backend for implementing authentication in the Dragon test job
+## A backend to implement authentication in the <a href='https://github.com/Cocokringle/dragon-react-app'>Dragon</a> web application using JSON Web Token.
 
 ### Technologies used:
 
